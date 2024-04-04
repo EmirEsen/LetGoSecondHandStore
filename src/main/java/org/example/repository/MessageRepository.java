@@ -33,10 +33,10 @@ public class MessageRepository extends RepositoryManager<Message, Long>{
         System.out.printf("--------------------------------------------------------------------------------------%n");
         for (Message m : adMessages) {
             String senderMessage = """
-                    FROM: %s
-                    Date: %s
+                   <- FROM: %s
+                   <- Date: %s
                    -----------------------
-                    %s \n
+                   <- %s \n
                    """.formatted(m.getSender().getUsername(),
                     m.getCreatedAt().toLocalDateTime().format(DateTimeFormatter.ofPattern("MMM dd, yyyy")),
                     m .getContent());

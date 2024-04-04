@@ -8,8 +8,6 @@ import org.example.service.FavoriteAdService;
 import org.example.service.MessageService;
 import org.example.service.UserService;
 import org.example.util.Util;
-
-import java.time.format.DateTimeFormatter;
 import java.util.Optional;
 
 public class Main {
@@ -65,7 +63,7 @@ public class Main {
     public static void userMenu(User user) {
         while (true) {
             System.out.println("""
-                    ------- MENU -------
+                    -------USER MENU -------
                      1- Publish New Ad
                      2- Show My Ads
                      3- Show My Favorite Ads

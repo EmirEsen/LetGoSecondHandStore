@@ -9,7 +9,7 @@ import org.example.entity.User;
 import org.example.repository.FavoriteAdRepository;
 
 import java.util.List;
-import java.util.Optional;
+import java.util.Optional;import java.util.stream.Collectors;
 
 public class FavoriteAdService {
 
